@@ -1,0 +1,18 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "channel": "chrome",
+      "headless": true,
+      "args": ["--enable-unsafe-swiftshader"]
+    },
+    "contextOptions": {
+      "viewport": {"width": 1440, "height": 1000},
+      "deviceScaleFactor": 1
+    }
+  },
+  "allowUnrestrictedFileAccess": true,
+  "outputDir": "output/playwright",
+  "outputMode": "file"
+}

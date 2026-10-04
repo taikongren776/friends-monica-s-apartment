@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f0e8">
+  <meta name="description" content="一间熟悉的公寓，一个可以转动的小小世界。离线 Three.js 微缩场景。">
+  <title>莫妮卡的小公寓 · A little world</title>
+  <!-- INLINE_THREE_LICENSE -->
+  <style>/* INLINE_STYLE */</style>
+</head>
+<body data-weather="sunny">
+  <div class="app">
+    <header class="header">
+      <div class="heading">
+        <div class="eyebrow"><span class="cube-mark" aria-hidden="true"><svg viewBox="0 0 28 28"><path d="M14 2 25 8.5v12L14 27 3 20.5v-12Z"/><path d="m3 8.5 11 6 11-6M14 14.5V27M14 2v12.5"/></svg></span><span>A LITTLE WORLD</span><span class="eyebrow-line"></span><span>APARTMENT 20</span></div>
+        <h1>莫妮卡的小公寓<span class="title-dot">.</span></h1>
+        <p class="subtitle">紫色墙壁，米白沙发，熟悉的每个角落。</p>
+      </div>
+      <div class="weather-panel">
+        <span class="panel-label">窗外的天气</span>
+        <div class="weather-switch" role="group" aria-label="切换环境">
+          <button class="weather-button active" type="button" data-mode="sunny" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><span>晴天</span></button>
+          <button class="weather-button" type="button" data-mode="rainy" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15a4 4 0 0 1-.5-8A6 6 0 0 1 17 7a4 4 0 0 1 1 8H6ZM8 18l-1 3m6-3-1 3m6-3-1 3"/></svg><span>雨天</span></button>
+          <button class="weather-button" type="button" data-mode="night" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 8.5 8.5 0 1 0 20 15.5Z"/><path d="m17 3 .5 1.5L19 5l-1.5.5L17 7l-.5-1.5L15 5l1.5-.5Z"/></svg><span>夜景</span></button>
+        </div>
+      </div>
+    </header>
+    <main class="stage" id="stage" aria-label="公寓三维场景">
+      <div class="loading" id="loading"><span class="loading-cube"></span><p>正在布置小公寓…</p></div>
+      <div class="scene-label" aria-hidden="true"><span class="scene-label-line"></span><span>THE ONE THAT FEELS LIKE HOME</span></div>
+      <div class="error-card" id="error-card" role="alert" hidden><h2>小公寓暂时无法显示</h2><p>这个场景需要 WebGL。请使用较新的 Chrome、Edge 或 Firefox，并开启浏览器的硬件加速。</p></div>
+    </main>
+    <footer class="footer">
+      <div class="mood" aria-live="polite" aria-atomic="true"><span class="mood-number" id="mood-number">01</span><div><div class="mood-name"><span class="status-dot"></span><span id="mood-name">阳光来做客</span></div><p id="mood-description">窗边的暖意，刚刚好。</p></div></div>
+      <div class="interaction-hints"><span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="2" width="10" height="17" rx="5"/><path d="M12 2v6m-5 0h10M3 15l-2 3 2 3m18-6 2 3-2 3"/></svg><span class="desktop-hint">拖动旋转</span><span class="touch-hint">单指旋转</span></span><span class="hint-divider"></span><span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6M7 10h6m-3-3v6"/></svg><span class="desktop-hint">滚轮缩放</span><span class="touch-hint">双指缩放</span></span></div>
+      <button id="reset-view" class="reset-button" type="button" aria-label="复位视角"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9a8 8 0 1 1 0 6M4 3v6h6"/></svg><span>复位视角</span></button>
+    </footer>
+  </div>
+  <noscript><div class="noscript">请开启 JavaScript，查看和旋转小公寓。</div></noscript>
+  <script>/* INLINE_SCRIPT */</script>
+</body>
+</html>

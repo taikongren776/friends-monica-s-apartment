@@ -1,0 +1,16 @@
+{
+  "name": "monicas-little-apartment",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An offline Three.js miniature of Monica's apartment",
+  "scripts": {
+    "build": "node scripts/build.mjs"
+  },
+  "dependencies": {
+    "three": "0.180.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2"
+  }
+}
